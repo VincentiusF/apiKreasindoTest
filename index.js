@@ -14,10 +14,10 @@ app.use(express.json());
 
 app.use('/api', authRoutes);
 
-app.use('/api', (req, res, next) => {
-    console.log(`Incoming Request: ${req.method} ${req.url}`);
-    next();
-});
+// app.use('/api', (req, res, next) => {
+//     console.log(`Incoming Request: ${req.method} ${req.url}`);
+//     next();
+// });
 
 
 // Connect to MongoDB
